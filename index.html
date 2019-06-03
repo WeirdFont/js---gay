@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<h1>ОЧКИ: <span class="score">100</span></h1>
+
+	<div class="Antilop" style="background-image: url(Antilop.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 100px; margin-top: 900px; position: absolute;"></div>
+	<div class="begemot" style="background-image: url(begemot.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 400px; margin-top: 150px;  position: absolute;"></div>
+	<div class="elephant" style="background-image: url(elephant.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 800px; margin-top: 350px; position: absolute;"></div>
+	<div class="giena" style="background-image: url(giena.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 900px; margin-top: 930px; position: absolute;"></div>
+	<div class="jiraf" style="background-image: url(jiraf.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 900px; margin-top: 140px; position: absolute;"></div>
+	<div class="korova" style="background-image: url(korova.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 1300px; margin-top: 50px;  position: absolute;"></div>
+	<div class="lion" style="background-image: url(lion.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 500; margin-top: 260px; position: absolute;"></div>
+	<div class="nosorog" style="background-image: url(nosorog.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 1300px; margin-top: 770px; position: absolute;"></div>
+	<div class="zebra" style="background-image: url(zebra.jpg); height: 200px; width: 300px; background-size: 100% 100%; margin-left: 100px; margin-top: 580px; position: absolute;"></div>
+	<div class="A" style="background: white; height: 200px; width: 300px; background-size: 100% 100%; margin-left: 100px; margin-top: 1210px; position: absolute;"></div>
+	<div class="S" style="background: white; height: 200px; width: 300px; background-size: 100% 100%; margin-left: 1200px; margin-top: 510px; position: absolute;"></div>
+<div class="vopros" style="display: none">
+	<h2 style="">Найдите корень</h2>
+</div> 
+
+<script>
+	let summa = 0;
+	let fon = function(){
+		alert("Не обращайте внимания если я допустил ошибку")
+		document.querySelector('.Antilop').style.background = "black";
+		document.querySelector('.begemot').style.background = "black";
+		document.querySelector('.elephant').style.background = "black";
+		document.querySelector('.giena').style.background = "black";
+		document.querySelector('.jiraf').style.background = "black";
+		document.querySelector('.korova').style.background = "black";
+		document.querySelector('.lion').style.background = "black";
+		document.querySelector('.nosorog').style.background = "black";
+		document.querySelector('.zebra').style.background = "black";
+		document.querySelector('.vopros').style.display = "block";
+		document.querySelector('.A').style.background = "black";
+		document.querySelector('.S').style.background = "black";
+	}
+	setTimeout(fon, 2000)
+	document.querySelector('.A').onclick = function() {
+			alert("правильно")
+			summa = summa + 100;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.A').style.background='white'
+		}
+		document.querySelector('.S').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+		}
+		document.querySelector('.Antilop').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.Antilop').style.backgroundImage = 'url(Antilop.jpg)';
+			document.querySelector('.Antilop').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.begemot').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.begemot').style.backgroundImage = 'url(begemot.jpg)';
+			document.querySelector('.begemot').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.elephant').onclick = function() {
+			alert("Где обитает этот слон?")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.elephant').style.backgroundImage = 'url(elephant.jpg)';
+			document.querySelector('.elephant').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.giena').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.giena').style.backgroundImage = 'url(giena.jpg)';
+			document.querySelector('.giena').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.jiraf').onclick = function() {
+			alert("НЕправильно")
+			summa: summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.jiraf').style.backgroundImage = 'url(jiraf.jpg)';
+			document.querySelector('.jiraf').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.korova').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySeletor('.score').innerHTML = summa;
+			document.querySelector('.korova').style.backgroundImage = 'url(korova.jpg)';
+			document.querySelector('.korova').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.lion').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.lion').style.backgroundImage = 'url(lion.jpg)';
+			document.querySelector('.lion').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.nosorog').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.nosorog').style.backgroundImage = 'url(nosorog.jpg)';
+			document.querySelector('.nosorog').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+		document.querySelector('.zebra').onclick = function() {
+			alert("НЕправильно")
+			summa = summa - 10;
+			document.querySelector('.score').innerHTML = summa;
+			document.querySelector('.zebra').style.backgroundImage = 'url(zebra.jpg)';
+			document.querySelector('.zebra').style.backgroundSize = '100% 100%';
+			document.querySelector('.score').innerHTML = summa
+		}
+</script>	
+</body>
+</html>
